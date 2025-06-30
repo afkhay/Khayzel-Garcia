@@ -1,0 +1,165 @@
+body {
+  margin: 50px;
+  font-family: 'Cal Sans', 'Manjari';
+  color: #ffffff;
+  background: #130e16;
+}
+
+.container {
+  display: flex;
+}
+
+/* sidebar main style and size */
+.sidebar { 
+  width: 30%;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* introduction text (name, description) */
+.intro h1 {
+  font-size: 50px;
+  font-weight: 100;
+  color: #f5dfff;
+  margin-bottom: 10px;
+}
+
+.intro h2 {
+  font-size: 25px;
+  font-weight: 100;
+  letter-spacing: 3px;
+  color: #f5dfff;
+  margin-top: 0px;
+}
+
+.intro p {
+  font-size: 15px;
+  font-family: 'Manjari';
+  color: #ae9cb4;
+  line-height: 20px;
+  margin-right: 15px;
+}
+
+/* tabs (about, exps, acts) */
+.tab-list {
+  list-style: none;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  padding: 0;
+}
+
+.tab-text {
+  font-size: 13px;
+  letter-spacing: 3px;
+}
+
+.tab-link {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: #ae9cb4;
+  transition: color 0.3s ease;
+}
+
+.tab-link .line {
+  width: 25px;
+  height: 1px;
+  background-color: #ae9cb4;
+  margin-right: 15px;
+  transition: width 0.5s ease, background-color 0s;
+}
+
+.tab-link:hover .line,
+.tab-link:focus .line {
+  width: 60px;
+  background-color: #f5dfff;
+}
+
+.tab-link:hover,
+.tab-link:focus {
+  color: #f5dfff;
+}
+
+section:target ~ .sidebar .tab-link[href*="about"] .line,
+section:target ~ .sidebar .tab-link[href*="experiences"] .line,
+section:target ~ .sidebar .tab-link[href*="activities"] .line {
+  width: 60px;
+  background-color: #f5dfff;
+}
+
+section:target ~ .sidebar .tab-link[href*="about"],
+section:target ~ .sidebar .tab-link[href*="experiences"],
+section:target ~ .sidebar .tab-link[href*="activities"] {
+  color: #f5dfff;
+}
+
+body:not(:has(:target)) .tab-link.active .line {
+  width: 60px;
+  background-color: #f5dfff;
+}
+
+body:not(:has(:target)) .tab-link.active {
+  color: #f5dfff;
+}
+
+.tab-link.active {
+  color: #f5dfff;
+}
+
+.tab-link.active .line {
+  width: 60px;
+  background-color: #f5dfff;
+}
+
+body:not(:has(:target)) .tab-link[href="#about"] {
+  color: #f5dfff;
+}
+
+/* social media account icons and links*/
+.socials a {
+  padding-top: 50px;
+  margin-right: 15px;
+  text-decoration: none;
+  color: #ae9cb4;
+  font-size: 20px;
+}
+
+.socials a img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  transition: transform 0.2s ease;
+}
+
+.socials a img:hover {
+  transform: scale(1.1);
+}
+
+/*about page content*/
+.content {
+  width: 70%;
+  padding: 3rem;
+  line-height: 1.6;
+}
+
+.content strong {
+  color: #f8fafc;
+}
+
+.job {
+  margin-top: 3rem;
+}
+
+.job span {
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+.job h3 {
+  font-size: 1.1rem;
+  color: #f8fafc;
+  margin-top: 0.3rem;
+}
