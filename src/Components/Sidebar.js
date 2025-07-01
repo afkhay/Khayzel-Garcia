@@ -29,9 +29,30 @@ const Sidebar = () => {
       </div>
 
       <div className="socials">
-        <a href="https://www.facebook.com/khyzl.grc28">🐱</a>
-        <a href="https://www.instagram.com/khyzlgrc/">💼</a>
-        <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSBmmBbKGvdvLbBmrFbxmRtVQCKcgxbWdHzxjNLQWZwfFMDHzxBFLLjVXlpdbcHCBrsjXBjs">📷</a>
+        <div className="tooltip">
+          <a href="https://www.facebook.com/khyzl.grc28" target="_blank" rel="noopener noreferrer">
+          <img src="/socmeds/facebook.png" alt="Facebook" />
+          <span className="tooltip-text">Facebook</span>
+          </a>
+        </div>
+        <div className="tooltip">
+          <a href="https://www.instagram.com/khyzlgrc/" target="_blank" rel="noopener noreferrer">
+          <img src="/socmeds/instagram.png" alt="Instagram" />
+          <span className="tooltip-text">Instagram</span>
+          </a>
+        </div>
+        <div className="tooltip">
+          <a href="mailto:khyzlgrc@gmail.com" target="_blank" rel="noopener noreferrer">
+          <img src="/socmeds/email.png" alt="Email" />
+          <span className="tooltip-text">Email</span>
+          </a>
+        </div>
+        <div className="tooltip">
+          <a href="https://www.hostinger.com/tutorials/web-developer-portfolio/" target="_blank" rel="noopener noreferrer">
+          <img src="/socmeds/note.png" alt="Note" />
+          <span className="tooltip-text">This portfolio's design is inspired by Brittany Chiang's website.</span>
+          </a>
+        </div>
       </div>
     </aside>
   );
